@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="MVC.css" />
+</head>
+
+<body>
+    <h1>
+        <B>TO DO LIST</B>
+    </h1>
+    <form method="POST" action="#">
+        <legend>
+            <B>TITLE:</B> </legend>
+        <label for="title"></label>
+        <input id="title" type="text">
+        <legend> COMMENT:</legend>
+        <label for="comment"></label>
+        <input id="comment" type="text" />
+        <input type="submit" value="submit" id="button" />
+    </form>
+
+    <script>
+        //Modele de donnee
+        let liste = [];
+        let ul = document.createElement("ul");
+        document.body.appendChild(ul);
+
+        function ajout(element) {
+            liste.push(element);
+
+        }
+
+        function supp(element) {
+            liste.splice(element, 1);
+        }
+
+        //affichage
+        function afficherList() {
+            ul.textContent = "";
+            for (let i = 0; i < liste.length; i++) {
+                let li = document.createElement("li");
+                li.textContent = liste[i];
+                ul.appendChild(li);
+                let button = document.createElement("button");
+                button.textContent = "suprimer";
+                document.querySelector("ul").appendChild(button);
+                button.addEventListener("click", function() {
+                    supp(i);
+                    afficherList();
+                });
+            }
+        }
+        // formulaire
+        let form = document.querySelector("form");
+        form.addEventListener("submit", function(e) {
+            let title = document.querySelector("#title").value;
+            let comment = document.querySelector("#comment").value;
+            ajout(title + " " + comment);
+            afficherList();
+
+            e.preventDefault();
+        });
+    </script>
+</body>
+
+</html>

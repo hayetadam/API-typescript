@@ -1,0 +1,34 @@
+body {
+    background: url("http://fr.cdn.v5.futura-sciences.com/buildsv6/images/mediumoriginal/3/b/6/3b6991cd9f_49136_pleiades-cnes.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    padding-right: 100px;
+}
+
+legend {
+    color: #DF3F3F;
+    font-weight: bold;
+}
+
+input {
+    border-radius: 5px;
+    height: 40px;
+}
+
+#title {
+    width: 300px;
+}
+
+#comment {
+    width: 300px;
+}
+
+li {
+    color: white;
+}
