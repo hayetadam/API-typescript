@@ -1,0 +1,28 @@
+{
+    "name": "promo3-typescript",
+    "version": "1.0.0",
+    "description": "A Node.js project for learning typescript with Simplon Lyon promo3",
+    "main": "dist/main.js",
+    "scripts": {
+        "test": "node dist/test.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/simplon-lyon/promo3-typescript.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/simplon-lyon/promo3-typescript/issues"
+    },
+    "homepage": "https://github.com/simplon-lyon/promo3-typescript#readme",
+    "dependencies": {
+        "body-parser": "^1.17.2",
+        "express": "^4.15.4"
+    },
+    "devDependencies": {
+        "@types/body-parser": "^1.16.5",
+        "@types/express": "^4.0.37"
+    }
+}

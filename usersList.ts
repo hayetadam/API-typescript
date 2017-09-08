@@ -32,11 +32,11 @@ export class UserList {
 }
 // tester l'API
 
-let list = new UserList();
+/*let list = new UserList();
 list.add(new User("toto", "toto"));
 list.add(new User("titi", "titi"));
 console.log(list);
 list.del("toto");
 console.log(list);
 let u = list.auth("titi", "titi");
-console.log(u);
+console.log(u);*/

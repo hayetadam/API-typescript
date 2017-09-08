@@ -1,4 +1,4 @@
-import {Todo} from './todo';
+import { Todo } from './todo';
 import * as express from 'express';
 
 const todo = new Todo();
@@ -10,7 +10,7 @@ les routes liées au Todo's
 export const router = express.Router();
 
 //Route permettant de récupérer les todo
-router.get('/', (req,res) => res.json(todo.lister()) );
+router.get('/', (req, res) => res.json(todo.lister()));
 //Route permettant d'ajouter un todo
 router.post('/', (req, res) => {
     let nouveau = req.body.nouveau;
