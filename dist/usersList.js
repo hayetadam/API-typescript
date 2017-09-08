@@ -38,5 +38,5 @@ console.log(list);
 list.del("toto");
 console.log(list);
 let u = list.auth("titi", "titi");
-console.log(u);*/ 
+console.log(u);*/
 //# sourceMappingURL=usersList.js.map
