@@ -31,6 +31,7 @@ var UserList = /** @class */ (function () {
     return UserList;
 }());
 exports.UserList = UserList;
+// tester l'API
 var list = new UserList();
 list.add(new user_1.User("toto", "toto"));
 list.add(new user_1.User("titi", "titi"));

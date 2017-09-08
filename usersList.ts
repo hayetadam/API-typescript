@@ -30,6 +30,7 @@ export class UserList {
         return null;
     }
 }
+// tester l'API
 
 let list = new UserList();
 list.add(new User("toto", "toto"));
