@@ -33,7 +33,7 @@ router.post('/' , (req, res) => { //ajoute ce qui a été récup par le post dan
 //Route permettant de supprimer un todo
 router.delete('/:suppr' , (req, res) => {
     let suppr = req.params.suppr;
-    todo.supperimer(suppr);
+    todo.supprimer(suppr);
     res.end('todo supprimé');
 });
 
