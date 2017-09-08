@@ -6,9 +6,11 @@ var UserList = /** @class */ (function () {
     function UserList() {
         this.users = [];
     }
+    //ajouter un user
     UserList.prototype.add = function (u) {
         this.users.push(u);
     };
+    //supprimer un user
     UserList.prototype.del = function (name) {
         for (var i = 0; i < this.users.length; i++) {
             if (this.users[i].name == name) {
@@ -16,6 +18,7 @@ var UserList = /** @class */ (function () {
             }
         }
     };
+    // authentification d'utilisateur
     UserList.prototype.auth = function (name, password) {
         for (var _i = 0, _a = this.users; _i < _a.length; _i++) {
             var u_1 = _a[_i];

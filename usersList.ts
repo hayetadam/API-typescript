@@ -7,11 +7,12 @@ export class UserList {
     constructor() {
         this.users = [];
     }
+    //ajouter un user
     
     add(u: User) {
         this.users.push(u);
     }
-
+//supprimer un user
     del(name: string) {
         for (let i = 0; i < this.users.length; i++) {
             if (this.users[i].name == name) {
@@ -19,7 +20,7 @@ export class UserList {
             }
         }
     }
-
+// authentification d'utilisateur
     auth(name: string, password: string): User {
         for (let u of this.users) {
             if (u.name == name && u.password == password) {
